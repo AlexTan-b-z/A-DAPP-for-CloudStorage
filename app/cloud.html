@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title>CloudB - Free Cloud Storage</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h2>Upload file to cloud</h2>
+  <div>
+    <label id="file">Choose file to upload</label>
+    <input type="file" ref="file" id="fileId" name="file" multiple="multiple" />
+    <button onclick=App.upload()>Submit</button>
+  </div>
+  </br>
+  </br>
+  </br>
+  </br>
+  <div id="files">
+    <h2>You have <label id="number" style="width:30px">0</label>files. Please choose what you want to download.</h2>
+    <select id="select"></select>
+    <button onclick=App.download()>Submit</button>
+  </div>
+</body>
+
+</html>
